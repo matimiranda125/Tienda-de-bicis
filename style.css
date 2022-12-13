@@ -31,15 +31,14 @@ a {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    /* background-color:  */
     background: linear-gradient(#270ace, #821bbe);
-    /* var(--clr-main); */
+
 }
 
 aside {
     padding: 2rem;
     padding-right: 0;
-    color: var(--clr-white);
+    color: white;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -63,7 +62,6 @@ aside {
     background-color: transparent;
     border: 0;
     color:#000000e5 ;
-    /* var(--clr-white); */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -75,9 +73,8 @@ aside {
 }
 
 .boton-menu.active {
-    background-color: var(--clr-white);
+    background-color: white;
     color:#000000e5 ;
-    /* var(--clr-main); */
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -92,7 +89,7 @@ aside {
     right: 0;
     background-color: transparent;
     border-bottom-right-radius: .5rem;
-    box-shadow: 0 1rem 0 var(--clr-white);
+    box-shadow: 0 1rem 0 white;
 }
 
 .boton-menu.active::after {
@@ -104,7 +101,7 @@ aside {
     right: 0;
     background-color: transparent;
     border-top-right-radius: .5rem;
-    box-shadow: 0 -1rem 0 var(--clr-white);
+    box-shadow: 0 -1rem 0 white;
 }
 
 .boton-menu > i.bi-hand-index-thumb-fill,
@@ -117,41 +114,40 @@ aside {
 }
 
 .numerito {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color:white;
+    color: linear-gradient(#270ace, #821bbe);
     padding: .15rem .25rem;
     border-radius: .25rem;
 }
 
 .boton-carrito.active .numerito {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background: linear-gradient(#270ace, #821bbe);
+    color: white;
 }
 
 .texto-footer {
     color:#000000e5 ;
-    /* var(--clr-main-light); */
     font-size: .85rem;
 }
 
 main {
-    background-color: var(--clr-white);
+    background-color: rgb(172, 149, 149);
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
     padding: 3rem;
+    gap: 1.5rem;
 }
 
 .titulo-principal {
-    color:#525252e5 ;
-    /* var(--clr-main); */
+    color:#000000e5  ;
     margin-bottom: 2rem;
 }
 
-.contenedor-productos {
+.contenedor-bicis {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .producto-imagen {
@@ -160,8 +156,8 @@ main {
 }
 
 .producto-detalles {
-    background-color: var(--clr-main);           /*Posiblemente se tenga que cambiat el color tambien aca*/
-    color: var(--clr-white);
+    background: linear-gradient(#270ace, #821bbe);          
+    color: white;
     padding: .5rem;
     border-radius: 1rem;
     margin-top: -2rem;
@@ -177,19 +173,19 @@ main {
 
 .producto-agregar {
     border: 0;
-    background-color: var(--clr-white);
-    color: var(--clr-main);      /*Cambiar cuando vea que anda todo el codigo*/
+    background-color:#270ace;
+    color: #821bbe;
     padding: .4rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(--clr-white);
-    transition: background-color .2s, color .2s;
+    border: 2px solid blue;
+    transition: background-color .2s, color blue .2s;
 }
 
 .producto-agregar:hover {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: #821bbe;
+    color: #270ace;
 }
 
 
@@ -204,7 +200,6 @@ main {
 .carrito-vacio,
 .carrito-comprado {
     color:#000000e5 ;
-    /* var(--clr-main); */
 }
 
 .carrito-productos {
@@ -217,8 +212,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-gray);
-    color: var(--clr-main);
+    background-color: gray;
+    color: linear-gradient(#270ace, #821bbe);
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
@@ -236,7 +231,7 @@ main {
 .carrito-producto-eliminar {
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color:red;
     cursor: pointer;
 }
 
@@ -247,10 +242,10 @@ main {
 
 .carrito-acciones-vaciar {
     border: 0;
-    background-color: var(--clr-gray);
+    background-color: gray;
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-main);
+    color: linear-gradient(#270ace, #821bbe);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -261,9 +256,9 @@ main {
 
 .carrito-acciones-total {
     display: flex;
-    background-color: var(--clr-gray);
+    background-color: gray;
     padding: 1rem;
-    color: var(--clr-main);
+    color: linear-gradient(#270ace, #821bbe);
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -272,9 +267,9 @@ main {
 
 .carrito-acciones-comprar {
     border: 0;
-    background-color: var(--clr-main);
+    background-color: linear-gradient(#270ace, #821bbe);
     padding: 1rem;
-    color: var(--clr-white);
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
     border-top-right-radius: 1rem;
