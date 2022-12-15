@@ -259,6 +259,7 @@ function actualizarBotonesAgregar() {
 
     botonesAgregar.forEach(boton => {
         boton.addEventListener("click", agregarAlCarrito);
+        //me da error, no se porque
         // Swal.fire({
         //     position: 'top-end',
         //     icon: 'success',
