@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <link rel="stylesheet" href="./style.css">
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>MatiShop</title>
+</head>
+    <body>
+        <!-- navbar -->
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 class="navbar-logo">MatiShop</h1>
+
+                <!-- <ul class="navbar-nav">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/productos.html">Productos</a>
+                    </li>
+                </ul> -->
+                <h1 class="ver-carrito" id="verCarrito"> <span id="cantidadCarrito" class="cantidad-carrito"></span><i class="bi bi-cart4"></i></h1>
+              
+              
+            </nav>
+
+        </div>  
+       
+        <!-- banner -->
+        <div class="banner">
+            <div class="banner-container">
+               <h1>MatiShop</h1>
+               <p>Bienvenidos a Nuestra tienda de bicis</p>
+            </div>
+        </div>
+        <h3 class="principal">Somos una tienda que vende las mejores bicicletas</h3>
+      
+        <!-- contenido shop -->
+        <div id="shopContent" class="shop-content" ></div>
+
+        
+        <!-- contenido modal -->
+
+        <div id="modal-Container" class="modal-container"></div>
+       
+
+        <script src="./productos.js"></script>
+        <script src="./index.js"></script>
+        <script src="./carrito.js"></script>
+    </body>
+</html>
