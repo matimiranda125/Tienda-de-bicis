@@ -10,14 +10,14 @@ const productos = [
         id: "bici de mtb",
         titulo: "Bici de mtb",
         imagen: "./imagenes/bicis-scott-mtb-02.jpg",
-        precio: 185000,
+        precio: 1850000,
         cantidad: 1,
     },
     {
         id: "bici de mtb",
         titulo: "Bici de mtb",
         imagen: "./imagenes/bici-canyon.jpg",
-        precio: 134000,
+        precio: 1340000,
         cantidad: 1,
     },
     {

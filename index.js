@@ -19,7 +19,6 @@ productos.forEach((producto) => {
         <img src=${producto.imagen} alt="${producto.imagen}">
         <h3>${producto.titulo}</h3>
         <p class="precio">${producto.precio}$ </p>
-    
         `;
 
     shopContent.append(content);
@@ -64,3 +63,33 @@ const saveLocal = () => {
 };
 
 // get item
+
+
+    fetch("productos.json")
+    .then(respuesta => respuesta.json())
+    .then(bici => {
+        bicis.forEach(bici => {
+        const div = document.createElement("div");
+        div.classList.add("container__shop__products__card");
+        div.innerHTML = `
+        <picture>
+        <img src="${bicis.imagen}"
+        alt="${bicis.nombre}" />
+        </picture>
+        <div class="container__shop__products__card-details">
+        <div class="container__shop__products__card-details-content">
+        <h4>${bicis.nombre}</h4>
+        <p class="container__shop__products__card-details-content-price">
+        <span>${bicis.precio}</span>
+        </p>
+        <button class="container__shop__products__card-details-content-button" id="${productos.id}">
+        Agregar <i class="uil uil-shopping-cart"></i>
+        </button>
+        </div>
+        </div>
+        `
+        content.append(div);
+        productosTotal.push(productos);
+
+    })
+    })
